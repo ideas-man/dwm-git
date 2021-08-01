@@ -11,10 +11,10 @@ license=('MIT')
 provides=($_pkgname)
 depends=('libx11' 'libxinerama' 'libxft' 'freetype2' 'st' 'dmenu')
 source=('config.h' 'config.mk' 'drw.c' 'drw.h' 'dwm.1'
-	'dwm.c' 'dwm.c' 'LICENSE' 'Makefile' 'README'
+	'dwm.c' 'dwm.c' 'LICENSE' 'Makefile' 
 	'transient.c' 'util.c' 'util.h')
 md5sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP'
-	'SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP'
+	'SKIP' 'SKIP' 'SKIP' 'SKIP'
 	'SKIP' 'SKIP' 'SKIP')
 
 build() {
@@ -24,5 +24,4 @@ build() {
 package() {
   make PREFIX=/usr DESTDIR="$pkgdir" install
   install -m644 -D LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
-  install -m644 -D README "$pkgdir/usr/share/doc/$pkgname/README"
 }
