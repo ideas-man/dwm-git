@@ -2,7 +2,7 @@ _pkgname=dwm
 pkgname=$_pkgname-git
 
 pkgver=6.5
-pkgrel=3
+pkgrel=4
 
 pkgdesc="A dynamic window manager for X"
 url="http://dwm.suckless.org"
